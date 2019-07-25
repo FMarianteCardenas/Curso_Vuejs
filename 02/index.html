@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<body>
+        <div id='app' class="container mt-5">
+            <h1>{{titulo}}</h1>
+            <div :class="['p-3','text-white',fondo]">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus tempore iste dolores. Obcaecati reiciendis odio repellendus, sint tempore cumque accusantium corporis deserunt, labore non doloremque, est in voluptates ex sapiente.</p>
+            </div>
+            <input type="text"class="form-control my-3" v-model="fondo">
+            <div class="text-white p-3" :class="{'bg-primary':color,'bg-dark':!color}">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores sunt repudiandae voluptate explicabo dolorem ut fugiat harum dolorum deleniti tempore maxime, alias veritatis recusandae error, in magnam iste minima blanditiis.</p>
+            </div>
+            <button class="btn btn-success my-3" @click="cambiarClase">cambiar clase</button>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+        <script src="main.js"></script>
+</body>
+</html>
