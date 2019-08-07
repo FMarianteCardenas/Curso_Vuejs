@@ -1,7 +1,7 @@
 Vue.component('hijo',{
     template:
     `<div class="bg-success">
-    <button class="btn-sm btn btn-primary" @click="$store.commit('aumentar')">+</button>
+    <button class="btn-sm btn btn-primary" @click="$store.commit('aumentar',1)">+</button>
     <button class="btn-sm btn btn-primary" @click="aumentar(2)">+ con mapMutation</button>
     <button class="btn-sm btn btn-primary" @click="disminuir(2)">- con mapMutation</button>
 
