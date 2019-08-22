@@ -220,7 +220,19 @@
                         <tbody>
                             <tr v-for="item in array" :key="item.id" :class="[{'tr-warning':item.id == 9}]">
                                 <td :class="[{'row-red':sub_column.key == 'col6' && getValue(item,sub_column.key) < 0,'hidden': !sub_column.visible,'fixed-left-1':sub_column.fixed == 1,'fixed-left-2':sub_column.fixed == 2,'fixed-left-3':sub_column.fixed == 3}]" class="text-center border" v-for="sub_column in getSubColumns" :key="sub_column.key">
-                                    <span v-if="sub_column.visible">{{getValue(item,sub_column.key)}}</span>
+                                    
+                                    <span v-if="sub_column.visible">
+                                        <span v-if="sub_column.type == 'value'">{{getValue(item,sub_column.key)}}</span>
+                                        <span v-if="sub_column.type == 'input_number'">
+                                            <!-- <v-text-field
+                                                label=""
+                                                outlined
+                                                v-model="item[sub_column.key]"
+                                                color="light-blue darken-4"
+                                            ></v-text-field> -->
+                                            <input type="text" v-model="item[sub_column.key]">
+                                        </span>
+                                    </span>
                                 </td>
                                 <td class="text-center border" v-for="action in settings2.actions" :key="action.key">
                                     <span  v-if="action.key == 'detail'">

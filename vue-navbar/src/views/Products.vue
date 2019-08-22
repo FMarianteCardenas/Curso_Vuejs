@@ -32,15 +32,15 @@ export default {
             settings2:{
                 columns:[
                     {key: 1,header:'Header 1',colspan:3,sticky:true, sub_columns:[
-                                                                {key:'col1',header:'Columna 1',visible:true,sticky:true,fixed:1,column_key:1,hideable:false},
-                                                                {key:'col2',header:'Columna 2',visible:true,sticky:true,fixed:2,column_key:1,hideable:false},
-                                                                {key:'col3',header:'Columna 3',visible:true,sticky:true,fixed:3,column_key:1,hideable:false}
+                                                                {key:'col1',header:'Columna 1',type:'value',visible:true,sticky:true,fixed:1,column_key:1,hideable:false},
+                                                                {key:'col2',header:'Columna 2',type:'value',visible:true,sticky:true,fixed:2,column_key:1,hideable:false},
+                                                                {key:'col3',header:'Columna 3',type:'value',visible:true,sticky:true,fixed:3,column_key:1,hideable:false}
                                                             ]
                     },
                     {key: 2,header:'Header 2',colspan:3, sub_columns:[
-                                                                {key:'col4',header:'Columna 4',visible:true,column_key:2,hideable:true},
-                                                                {key:'col5',header:'Columna 5',visible:true,column_key:2,hideable:true},
-                                                                {key:'col6',header:'Columna 6',visible:true,column_key:2,hideable:true}
+                                                                {key:'col4',header:'Columna 4',type:'input_number',visible:true,column_key:2,hideable:true},
+                                                                {key:'col5',header:'Columna 5',type:'input_number',visible:true,column_key:2,hideable:true},
+                                                                {key:'col6',header:'Columna 6',type:'input_number',visible:true,column_key:2,hideable:true}
                                                             ]
                     },
                     {key: 3,header:'Header 3',colspan:3, sub_columns:[
